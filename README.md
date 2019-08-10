@@ -7,14 +7,26 @@ through door to numbers
 Count your views on your website without JavaScript and privacy focused. No
 tracking just counting.
 
-<pre><code>Clone repository.
+```bash
+# Clone repository.
 $ git clone https://github.com/oltdaniel/door.git
-Enter repository.
+# Enter repository.
 $ cd door
-Install dependencies.
+# Install dependencies.
 $ ./install.sh
-Start server.
-$ go run main.go</code></pre>
+# Start server.
+$ go run main.go
+```
+
+To call this server to count the views, you can simply add a new css file to
+your existing website. The average size this request will consume is under 200
+bytes.
+
+```html
+<link rel="styelsheet" href="http://localhost:8080/style.css">
+```
+
+To view your stats call [localhost:8080/stats](http://localhost:8080/stats).
 
 # how
 
