@@ -13,7 +13,7 @@ $ git clone https://github.com/oltdaniel/door.git
 # Enter repository.
 $ cd door
 # Install dependencies.
-$ ./install.sh
+$ ./deps.sh
 # Start server.
 $ go run main.go
 ```
