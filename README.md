@@ -16,6 +16,8 @@ $ cd door
 $ ./deps.sh
 # Start server.
 $ go run main.go
+# Run to store stats as txt
+$ ./store.sh
 ```
 
 To call this server to count the views, you can simply add a new css file to

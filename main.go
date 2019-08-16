@@ -88,8 +88,10 @@ func anonymize(ip string) string {
     ipaddr := net.ParseIP(host)
     // mask addresses
     if ipaddr.To4() != nil {
+        // return masked ipv4 string
         return ipaddr.Mask(IPV4Mask).String()
     } else {
+        // return masked ipv6 string
         return ipaddr.Mask(IPV6Mask).String()
     }
 }
